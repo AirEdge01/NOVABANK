@@ -1,0 +1,25 @@
+.dropdown:hover .dropdown-menu{
+    display: block;
+    margin-top: 0;
+    margin-right: 0px;
+}
+#imgg :hover{
+        transform: scale(1.2);
+    }
+
+    #imgg{
+        transition:0.9s;
+        margin-left: 0px;
+    }
+    #nov{
+    background-color: #ff4500;
+    color: white;
+    font-size: 20px;
+    border: 1px solid #ff4500;
+    margin-right: 20px;
+    transition: 0.5s;
+    align-items: center;
+}
+#nov:hover{
+    transform:translateY(-5px) ;
+}
