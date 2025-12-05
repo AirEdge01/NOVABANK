@@ -1,66 +1,206 @@
-.dropdown:hover .dropdown-menu{
-    display: block;
-    margin-top: 0;
-    margin-right: 0px;
-   
-}
+/* General colors and button */
+.text-orange { color: #ff4500; }
+.btn-orange { background-color: #ff4500; border: 1px solid #ff4500; color: white; }
+.btn-orange:hover { transform: translateY(-3px); transition: 0.3s; }
 
-#imgg :hover{
-        transform: scale(1.2);
-    }
+/* Navbar hover */
+.dropdown:hover .dropdown-menu { display: block; margin-top: 0; } 
+ #imgg:hover { transform: scale(1.2); transition: 0.9s; }
 
-    #imgg{
-        transition:0.9s;
-        margin-left: 0px;
-}
-#alll ul:hover{
-    color: rebeccapurple;
-}
-#nov{
-    background-color: #ff4500;
-    color: white;
-    font-size: 20px;
-    border: 1px solid #ff4500;
-    margin-right: 20px;
-    transition: 0.5s;
-    align-items: center;
-}
-#nov:hover{
-    transform:translateY(-5px) ;
-}
+/* Navbar buttons */
+#nov { background-color: #ff4500; color: white; font-size: 20px; border: 1px solid #ff4500; transition: 0.5s; }
+#nov:hover { transform: translateY(-5px); }
 
-.sect{
+/* Hero section */
+.sect {
     display: flex;
-    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
     margin-top: 70px;
-    gap: 100px;
+    gap: 40px;
+    padding: 0 20px;
+} 
+
+/* Hero text and button */
+.sect h1 {
+    color: #ff4500;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+} 
+
+.sect p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.3;
+    text-align: center;
 }
-.bb{
-    margin-top: 30px;
+
+.bb {
+    margin-top: 20px;
     background-color: #ff4500;
     color: white;
-    padding: 9px;
+    padding: 9px 15px;
     font-size: 15px;
     font-weight: 500;
-    border: 1px solid #ff4500;
     border-radius: 5px;
+    border: 1px solid #ff4500;
+}
 
+.bb:hover { transform: translateY(-5px); transition: 0.9s; }
+
+/* Hero images */
+.sect img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
-.bb:hover{
-    transform:translateY(-5px);
-    transition: 0.9s;
-}
-.mg1:hover{
-    transform:translateY(-9px);
-     transition:0.9s;
-}
-.foot{
+
+/* Footer */
+.foot {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
     font-weight: 800;
     color: #ff4500;
     margin-top: 100px;
-    text-align:left;
+    text-align: left;
+}
+
+.foot .card {
+    width: 250px;
+    padding: 15px;
+    color: #ff4500;
+}
+
+.foot img {
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid #eaf2f5;
+    background-color: #eaf2f5;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+/* Responsive media queries */
+@media (min-width: 768px) {
+    .sect {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+    }
+    .sect h1 { font-size: 3rem; text-align: left; }
+    .sect p { font-size: 1.25rem; text-align: left; }
+}
+
+@media (min-width: 1200px) {
+    .sect h1 { font-size: 3.5rem; }
+    .sect p { font-size: 1.5rem; }
+}
+
+
+/* Navbar */
+#alll ul li a.text-orange {
+    color: #ff4500;
+}
+
+#alll ul li a.text-orange:hover {
+    color: #ff4500;
+    opacity: 0.8;
+}
+
+#imgg img {
+    transition: 0.9s;
+}
+#imgg img:hover {
+    transform: scale(1.2);
+}
+
+/* Section container */
+section {
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+    align-items: center;
+    flex-wrap: wrap; /* allow items to wrap on small screens */
+    margin: 50px 20px;
+}
+
+/* Text styles */
+section h1 {
+    color: #ff4500;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+/* Image styles */
+section div img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Button styles */
+.bb {
+    background-color: #ff4500;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid #ff4500;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.bb:hover {
+    transform: translateY(-3px);
+}
+
+/* Media Queries */
+
+/* Medium screens */
+@media (max-width: 992px) {
+    section {
+        gap: 10%;
+    }
+
+    section h1 {
+        font-size: 2rem;
+    }
+
+    section p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column; /* Stack text and image */
+        text-align: center;
+        gap: 30px;
+    }
+
+    section h1 {
+        font-size: 1.75rem;
+    }
+
+    section p {
+        font-size: 0.9rem;
+    }
+
+    section div img {
+        max-width: 150%; /* keep image within screen */
+    }
 }

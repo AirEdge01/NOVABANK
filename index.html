@@ -1,131 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nova Bank</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova Bank</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-light p-4 mx-5" id="alll" style="position: sticky;top: 0;z-index: 80;box-shadow:0.2px 0.3px gray;width: 100%;background-color:white;" >
-  <div class="container-fluid ">
-    <a  class="navbar-brand" id="imgg"  href="./index.html"><img src="./imgi_1_nova logo2.ca949fce1b2591473e45.png" alt="" width="100px"></a>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="list-group navbar-nav me-auto mb-2 mb-lg-0 " style="gap:30px;font-weight: 700;margin-left: 20px;justify-content: center;">
-        
-              <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ff4500;">
-                  Features
-              </a>  
-              <ul class="dropdown-menu">
-                  <li><a  style="color: #ff4500;"class="dropdown-item" href="./error.html">  <img src="solar--card-linear.svg" alt="">Nova card</a></li>
-                  <li><a  style="color: #ff4500;"class="dropdown-item" href="./error.html"><img src="./ph--cards-fill.svg" alt=""  width="30px"> Spend</a></li>
-                  <li><a  style="color: #ff4500;"class="dropdown-item" href="./error.html"><img src="./save.svg" alt=""> Save</a></li>
-                  <li><a  style="color: #ff4500;"class="dropdown-item" href="./error.html"><img src="./ic--twotone-add-card.svg" alt=""> Budget</a></li>
-                  <li><a  style="color: #ff4500;"class="dropdown-item" href="./error.html"><img src="./fa--dollar.svg" alt=""  width="15px"> Borrow</a></li>
-              </ul>
-              </li>
-              
-                <li class="nav-item"    >
-                <a class="nav-link" href="#"    style="color: #ff4500;">Business <button    style="color: #ff4500;background-color: transparent;border: 2px solid rgb(226, 214, 214);border-radius: 12px;">beta</button></a>
-                </li>
 
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ff4500;">
-                  Company
-              </a>
-              <ul class="dropdown-menu">
-                  <li><a  style="color: #ff4500;" class="dropdown-item" href="./error.html">Blog</a></li>
-                  <li><a  style="color: #ff4500;" class="dropdown-item" href="./error.html">Press</a></li>
-                  <li><a  style="color: #ff4500;" class="dropdown-item" href="./error.html">Join Our Team</a></li>
-                  <li><a  style="color: #ff4500;" class="dropdown-item" href="./error.html">About Us</a></li>
-              </ul>
-              </li>
-              </li>
-            
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ff4500;">
-                  Help
-              </a>
-              <ul class="dropdown-menu">
-                  <li><a style="color: #ff4500;" class="dropdown-item" href="./error.html">Get Help</a> </li>
-                  <li><a  style="color: #ff4500;" class="dropdown-item" href="#">FAQs</a></li>
-                  <li><a  style="color: #ff4500;" class="dropdown-item" href="#">Security</a></li>
-                  <li><a  style="color: #ff4500;" class="dropdown-item" href="#">Contact  Us</a></li>
-              </ul>
-              </li>
-              </li>
-            
-          </ul>
-        
-        
-        
-        <form class="d-flex" role=""  style="color: #ff4500;gap: 20px;  font-weight: 600;">
-          <a style="font-size: larger;color: #ff4500; text-decoration: none; " href="./signin.html">Sign In </a>
-<button class="btn btn-outline-success" type="submit" id="nov"><a  style="text-decoration: none;color: white;" href="./signup.html">Get Nova</a></button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="list-group navbar-nav me-auto mb-2 mb-lg-0 " style="gap: 30px;font-weight: 700;">
-            
-                  <li class="nav-item dropdown">
-                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="./imgi_2_logo.35a253e246ecccdec7bc855f5ffb70e3.svg" alt="...">
-                  </a>
-                  <ul class="dropdown-menu">
-                    <img src="imgi_3_imagescam.3c3323de2def98857e14.png" alt="">
-                    <li></li>
-                      </p>
-                  </li>
-                      </ul>
-          </ul>
-        </form>
-  </nav>
-  <section  class="sect">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-light py-3 px-4" id="alll" style="position: sticky; top:0; z-index:80; box-shadow:0.2px 0.3px gray; background-color:white;">
+  <div class="container-fluid">
+    <a class="navbar-brand" id="imgg" href="./index.html">
+      <img src="./imgi_1_nova logo2.ca949fce1b2591473e45.png" alt="Nova Logo" width="100">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     
-    <div>
-      <h1 style="color: #ff4500;font-size: 50px;margin-right: 170px;font-weight:700;">
-        We offer you the <br>guarantee of a <br>modern banking <br>experience
-      </h1>
-      <p  style="font-size: 20px;font-weight: 500;line-height: 1.2;margin-top: 20px;">
-        We’re here to help you get the best out of <br>your money, no strings attached. <br>
-        Welcome to your freedom!
-      </p>
-      <img src="./imgi_4_cbn.1de936c25597f63b648e14a17321fb71.svg" alt="">
-      <p>
-        <button class="bb">Get Nova ></button>
-      </p>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3 gap-lg-4 fw-bold">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-orange" href="#" data-bs-toggle="dropdown">Features</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item text-orange" href="./error.html"><img src="./solar--card-linear.svg" alt="Nova card" width="20"> Nova card</a></li>
+            <li><a class="dropdown-item text-orange" href="./error.html"><img src="./ph--cards-fill.svg" alt="Spend" width="20"> Spend</a></li>
+            <li><a class="dropdown-item text-orange" href="./error.html"><img src="./save.svg" alt="Save" width="20"> Save</a></li>
+            <li><a class="dropdown-item text-orange" href="./error.html"><img src="./ic--twotone-add-card.svg" alt="Budget" width="20"> Budget</a></li>
+            <li><a class="dropdown-item text-orange" href="./error.html"><img src="./fa--dollar.svg" alt="Borrow" width="15"> Borrow</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-orange" href="#">Business <button class="btn btn-outline-secondary btn-sm ms-1">beta</button></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-orange" href="#" data-bs-toggle="dropdown">Company</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item text-orange" href="./error.html">Blog</a></li>
+            <li><a class="dropdown-item text-orange" href="./error.html">Press</a></li>
+            <li><a class="dropdown-item text-orange" href="./error.html">Join Our Team</a></li>
+            <li><a class="dropdown-item text-orange" href="./error.html">About Us</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-orange" href="#" data-bs-toggle="dropdown">Help</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item text-orange" href="./error.html">Get Help</a></li>
+            <li><a class="dropdown-item text-orange" href="#">FAQs</a></li>
+            <li><a class="dropdown-item text-orange" href="#">Security</a></li>
+            <li><a class="dropdown-item text-orange" href="#">Contact Us</a></li>
+          </ul>
+        </li>
+      </ul>
+      
+      <div class="d-flex align-items-center gap-2 gap-lg-3">
+        <a href="./signin.html" class="text-orange fw-semibold text-decoration-none fs-6">Sign In</a>
+        <a href="./signup.html" class="btn btn-orange text-white fw-bold">Get Nova</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+ <section style="display: flex; justify-content: center;gap: 15%;">
+<div>
+    <h1 class="fw-bold text-orange" style="font-size: 2.5rem;">
+      We offer you the <br>guarantee of a <br>modern banking <br>experience
+    </h1>
+    <p class="fs-6 fw-medium mt-3" style="line-height:1.3;">
+      We’re here to help you get the best out of <br>your money, no strings attached. <br>
+      Welcome to your freedom!
+    </p>
     </div>
     <div>
-      <img src="./imgi_5_E-Wallet-pana.aa62ca92276baf3c2c8bddf71e3c9dd0.svg" alt="" class="mg1" width="480px" >
-    </div>
+      <img 
+      src="./imgi_5_E-Wallet-pana.aa62ca92276baf3c2c8bddf71e3c9dd0.svg" 
+      alt="" class="img-fluid" style="max-width:500%;">
+      
+      <img src="./imgi_4_cbn.1de936c25597f63b648e14a17321fb71.svg" alt="Nova CBN" class="img-fluid my-3" style="max-width:250%;">
+      <button class="bb">Get Nova ></button>
+  </div> 
   </section>
 
-  <footer class="foot">
-            <div class="" style="width: 25rem;color: #ff4500;">
-    <div class="card" style="width: 25rem;color: #ff4500;">
-      <img src="solar--card-linear.svg" alt=""  width="40px"  style="border: 1px solid  #eaf2f5;background-color:#eaf2f5 ;border-radius: 30px;padding: 5px;">
-      <p>We’ll give you a free debit card. Order it right <br>in the app.</p>
-    </div>
-    </div>
-    <div class="card" style="width: 25rem;  color: #ff4500;">
-      <img src="./ph--cards-fill.svg" alt=""  width="40px"  style="border: 1px solid  #eaf2f5;background-color:#eaf2f5 ;border-radius: 30px;padding: 5px;">
-      <p>Create smart budgets to help you take control of your spending.</p>
-    </div>
-    <div class="card" style="width: 25rem;  color: #ff4500;">
-      <img src="./save.svg" alt=""  width="40px"  style="border: 1px solid  #eaf2f5;background-color:#eaf2f5 ;border-radius: 30px;padding: 5px;">
-      <p>See where your money goes without solving  <br> equations..</p>
-    </div>
-    <div class="card" style="width: 25rem;  color: #ff4500;">
-      <img src="./ic--twotone-add-card.svg" alt=""  width="40px"  style="border: 1px solid  #eaf2f5;background-color:#eaf2f5 ;border-radius: 30px;padding: 5px;">
-      <p>Pay absolutely nothing for sending money.</p>
-    </div>
-    <div class="card" style="width: 25rem;color: #ff4500;">
-      <img src="./fa--dollar.svg" alt=""  width="25px"  style="border: 1px solid  #eaf2f5;background-color:#eaf2f5 ;border-radius: 30px;padding: 5px;">
-      <p>Save automatically and we’ll pay you up to <br>15% interest every year.</p>
-    </div>
-  </footer>
 
+<footer class="foot container d-flex flex-wrap justify-content-center gap-4 my-5 text-orange fw-bold text-start">
+  <div class="card p-3">
+    <img src="./solar--card-linear.svg" alt="Card" width="40px" class="mb-2" style="border:1px solid #eaf2f5; background:#eaf2f5; border-radius:30px; padding:5px;">
+    <p>We’ll give you a free debit card. Order it right <br>in the app.</p>
+  </div>
+  <div class="card p-3">
+    <img src="./ph--cards-fill.svg" alt="Budget" width="40px" class="mb-2" style="border:1px solid #eaf2f5; background:#eaf2f5; border-radius:30px; padding:5px;">
+    <p>Create smart budgets to help you take control of your spending.</p>
+  </div>
+  <div class="card p-3">
+    <img src="./save.svg" alt="Save" width="40px" class="mb-2" style="border:1px solid #eaf2f5; background:#eaf2f5; border-radius:30px; padding:5px;">
+    <p>See where your money goes without solving <br> equations..</p>
+  </div>
+  <div class="card p-3">
+    <img src="./ic--twotone-add-card.svg" alt="Send Money" width="40px" class="mb-2" style="border:1px solid #eaf2f5; background:#eaf2f5; border-radius:30px; padding:5px;">
+    <p>Pay absolutely nothing for sending money.</p>
+  </div>
+  <div class="card p-3">
+    <img src="./fa--dollar.svg" alt="Save Money" width="25px" class="mb-2" style="border:1px solid #eaf2f5; background:#eaf2f5; border-radius:30px; padding:5px;">
+    <p>Save automatically and we’ll pay you up to <br>15% interest every year.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </html>
